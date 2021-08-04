@@ -16,7 +16,9 @@ public class Main {
         int F = Integer.parseInt(st.nextToken());
 
         map = InitMap(N);
+        SetNode(st, br, map);
 
+        if(br != null) br.close();
     }
 
     static public class Node{
@@ -46,11 +48,13 @@ public class Main {
         return map;
     }
 
-    static public void SetNode(StringTokenizer st, Node[][] map) {
+    static public void SetNode(StringTokenizer st,BufferedReader br,Node[][] map) throws Exception{
         for(int row = 0;row < map.length;row++){
+            st = new StringTokenizer(br.readLine());
             for(int column = 0;column < map[row].length;column++){
+                if(st.countTokens() == 0) break;
                 Node node = map[row][column];
-
+                if(Integer.parseInt(st.nextToken().trim()) == 1) node.imWall = true;
             }
         }
     }

@@ -1,5 +1,8 @@
 ## baekjoon-solution-repo
->백준 문제 repository
+백준 문제 repository
+
+### Study Notion 🔗
+>https://h2memo.notion.site/f8d99ef490bc49758beed2b1bd542b81
 
 ### 문제
 >BFS\

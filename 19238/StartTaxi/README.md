@@ -1,7 +1,7 @@
 ## 백준 사이트
 >https://www.acmicpc.net/problem/19238
 ## 참고 사이트
-
+---
 ## 참고 예시
 
 >예제 1
@@ -49,3 +49,10 @@
 4 2 3 5
 ```
 정답 : -1
+
+---
+
+### ✅ 포인트
+
+- StringTokenizer(new BufferedReader(new InputStreamReader(System.in).readLine()) == "1" ??
+  - 확인 필요
